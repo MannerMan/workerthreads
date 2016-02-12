@@ -32,7 +32,3 @@ PropagateWork.PopulateJobQueue(ListOfJobs)
 #Now, begin our work. We give BeginWork the number of threads we want to spawn, delay between spawns, and what function to trigger (WorkerFunction..)
 #everything after that will be passed as arguments to our "WorkerFunction". 
 PropagateWork.BeginWork(num_threads, thread_start_delay, WorkerFunction, somevar)
-
-#use this instead to dump to file
-#PgDumpToFile.Roles(PgDumpIp, PgDumpUser)
-#PropagateWork.BeginWork(num_threads, thread_start_delay, PgDumpToFile.Schema, PgDumpIp, PgDumpUser)
